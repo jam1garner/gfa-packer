@@ -1,10 +1,4 @@
 import sys,os,zlib,binascii,struct
-
-def compress(uncompressedString):
-    compressedString = ""
-    index = 0
-    while index < len(compressedString):
-        
         
 def int32(integer):
     return struct.pack("<L",integer)
@@ -19,7 +13,7 @@ def getString(file):
 
 if len(sys.argv) <= 2 or len(sys.argv) > 3:
     print 'Usage:'
-    print 'gfaCompress.py [folderToCompress] [gfa to copy hashes from]'
+    print 'gfa-packer.py [folderToCompress] [gfa to copy hashes from]'
     quit()
 
 filenames = []
